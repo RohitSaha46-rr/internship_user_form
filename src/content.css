@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(220, 241, 245);
+    display: grid;
+    place-items: center;
+}
+.content .main_content{
+    width: 90vw;
+    height: 90vh;
+    background-color: rgb(43, 168, 107);
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.content .main_content .left{
+    width: 45vw;
+    height: 90vh;
+    background-image: url('./images/pic.png');
+    background-size: 100% 100%;
+    clip-path: polygon(95% 0, 83% 25%, 93% 52%, 92% 82%, 85% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.content .main_content .right{
+    width: 45vw;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.content .main_content .right h1{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.5rem;
+}
+.content .main_content .right .box1{
+    width: 40vw;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.content .main_content .right .check{
+    margin-top:20px;
+    
+}
+.content .main_content .right .check .checkbox{
+    width: 2vw;
+    height: 2vh;
+}
+.content .main_content .right .check label{
+    font-family: 'Titillium Web', sans-serif;
+    color: #72f6a9;
+}
+.content .main_content .right .inpuut{
+    position: relative;
+     
+     margin-top: 10px;
+ }
+ .content .main_content .right #name{
+     width: 18vw;
+     height: 5vh;
+     border: none;
+     outline: none;
+     border-bottom: 3px solid rgb(253, 253, 253);
+     background: transparent;
+     margin-top: 28px; 
+     font-size: 1.5rem;
+ }
+ .content .main_content .right #name::placeholder{
+     font-size: 2rem;
+ }
+ .content .main_content .right .input{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+    padding-top: 17px; 
+     pointer-events: none;
+     font-size: 1.5rem;
+     font-weight: bolder;
+     transition: 1s;
+     color: #72f6a9;
+     font-family: 'Titillium Web', sans-serif;
+ }
+ .content .main_content .right input:focus~.input,.content .main_content .right input:valid~.input{
+     top: -6px;
+     left: 0px;
+     font-size: 1rem;
+ } 
+ .content .main_content .right .btn{
+     width: 15vw;
+     height: 6vh;
+     position: relative;
+     top: 15px;
+     background: linear-gradient(to left,#72f6a9,30%,#038439);
+    
+     color: rgb(255, 255, 255);
+     font-weight: bolder;
+     border: none;
+     outline: none;
+     border-top-left-radius: 25px;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     border-top-right-radius: 25px;
+     font-family: 'Titillium Web', sans-serif;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
